@@ -3,9 +3,9 @@
 {
   width: 100%;
   user-select: none;
-  background-color: rgb(179, 205, 221);
+  background-color: rgb(235, 249, 252);
   border-radius: 1mm;
-  min-width: 420px;
+  min-width: 380px;
 }
 .button
 {
@@ -14,12 +14,13 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 1mm;
   font-weight: 400;
-  background-color: rgb(169, 204, 244);
+  background-color: rgb(134, 211, 255);
   animation-name: button;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   border-color: black;
   border-width: 1px;
+  
 }
 .button:hover
 {
@@ -30,7 +31,7 @@
 {
   min-width: 50px;
   width: 100%;
-  background-color: rgb(70, 198, 187);
+  background-color: rgb(117, 203, 196);
   max-width: 100px;
   border-radius:1mm;
   border-color: black;
@@ -42,6 +43,11 @@
   height: 100%;
   min-height: 100px;
   max-height: 110px;
+}
+#titd
+{
+  text-align: center;
+  width: 100%;
 }
 .link
 {
@@ -133,13 +139,11 @@
 /* firefox */
 #VO
 {
-  transform: rotate(-90deg);
   visibility: hidden;
-  position: absolute;
 }
 input[type='range']
 {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   margin-left: 10px;
   position: absolute;
   bottom: 585px;
@@ -162,8 +166,9 @@ input[type='range']::-moz-range-progress
   border-radius: 1mm;
 }
 /* chrome */
-input[type='range']::-webkit-scrollbar-thumb
+input[type='range']::-webkit-slider-thumb
 {
+  color: blanchedalmond;
   background-color: rgb(170, 52, 52);
   border-radius: 50%;
   box-sizing: 100px;
@@ -280,6 +285,10 @@ input[type='range']::-ms-track
     max-width: 400px;
   }
   #OdS
+  {
+    text-align: center;
+  }
+  #creator
   {
     text-align: center;
   }
